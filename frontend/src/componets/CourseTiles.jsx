@@ -36,7 +36,7 @@ const CourseTiles = (props) => {
     });
     const csDelete = async () => {
       const response = await fetch(
-        "http://localhost:4000/api/chapters/" + props.chapter._id,
+        "http://localhost:4000/api/courses/" + props.chapter._id,
         {
           method: "DELETE",
           headers: {

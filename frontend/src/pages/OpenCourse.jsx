@@ -13,6 +13,16 @@ import { ProgressBar } from "react-loader-spinner";
 import Swal from "sweetalert2";
 import Layout from "../componets/Layout/Layout";
 
+
+const PDFViewerIframe = ({ pdfUrl }) => {
+  return (
+    <div>
+      <iframe src={pdfUrl} width="100%" height="600px" title="PDF Viewer" />
+    </div>
+  );
+};
+
+
 const OpenCourse = () => {
   const location = useLocation();
   const propsData = location.state;
